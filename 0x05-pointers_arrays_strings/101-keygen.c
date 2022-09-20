@@ -4,9 +4,9 @@
 #include <math.h>
 
 /**
- * main - print password
+ * main - print password.
  *
- * Return: 0
+ * Return: o
  */
 
 int main(void)
@@ -19,7 +19,7 @@ int main(void)
 	while (ascii > 126)
 	{
 		random = rand() % 126;
-		passsword[i] = random;
+		password[i] = random;
 		ascii -= random;
 		i++;
 	}
@@ -29,6 +29,7 @@ int main(void)
 	{
 		i--;
 	}
+
 
 	for (j = 0; j <= i; j++)
 	{
