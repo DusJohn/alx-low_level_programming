@@ -3,9 +3,9 @@
 /**
  * _strcmp - This function compares two strings.
  *
- * @s!: String 1.
+ * @s1: String 1.
  *
- * @s@: String 2.
+ * @s2: String 2.
  *
  * Return: 0 if the compared strings are similar, and ns1 - ns2 if they are
  * dissimilar.
