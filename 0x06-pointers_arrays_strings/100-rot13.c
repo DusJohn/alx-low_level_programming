@@ -1,30 +1,29 @@
 #include "main.h"
 
 /**
- * *rot13 - encodes a string unsing rot13.
+ * rot13 - encodes a string into r0t13
  *
- * @str: int type array pointer.
+ * @s: string to encode
  *
- * Return: encoded.
+ * Return: address of s
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i, ii;
+	int i, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		for (ii = 0; ii < 54; ii++)
+		for (j = 0; j < 52; j++)
 		{
-			if (((str[i] <= 'z' && str[i] >= 'a') || (str[i] <= 'Z'
-&& str[i] >= 'A')) && str[i] == input[ii])
+			if (a[j] == *(s + i))
 			{
-				str[i] = output[ii];
+				*(s + i) = b[j];
 				break;
 			}
 		}
-		return (str);
 	}
+	return (s);
+}
