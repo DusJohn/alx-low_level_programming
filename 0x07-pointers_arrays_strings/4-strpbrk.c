@@ -10,7 +10,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int = 0, b;
+	int a = 0, b;
 
 	while (s[a])
 	{
@@ -22,6 +22,7 @@ char *_strpbrk(char *s, char *accept)
 			{
 				s += a;
 				return (s);
+
 			}
 
 			b++;
