@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 int _strLen(char *str);
@@ -40,8 +40,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	ownerLen = _strLen(owner);
 	n_dog->owner = malloc(sizeof(char) * ownerLen + 1);
-
-
 
 	if (n_dog->owner == NULL)
 	{
