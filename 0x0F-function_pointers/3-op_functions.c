@@ -17,13 +17,13 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - Calculates the difference of @c and @b
+ * op_sub - Calculates the difference of @a and @b
  *
  * @a: A number
  *
  * @b: Another number
  *
- * Return: Difference if @a and @b
+ * Return: Difference of @a and @b
  */
 
 int op_sub(int a, int b)
