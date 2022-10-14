@@ -107,6 +107,17 @@ void print_int(va_list *arg)
 
 void print_float(va_list *arg)
 {
+	printf("%f", va_arg(*arg, double));
+}
+
+/**
+ * print_string - prints a string
+ *
+ * @arg: pointer to string
+ */
+
+void print_string(va_list *arg)
+{
 	char *str[2];
 	int i;
 
