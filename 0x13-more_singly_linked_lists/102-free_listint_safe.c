@@ -28,7 +28,7 @@ size_t looped_listint_count(listint_t *head)
 	{
 		if (tortoise == hare)
 		{
-			tortoise = head);
+			tortoise = head;
 			while (tortoise != hare)
 			{
 				nodes++;
